@@ -2,6 +2,9 @@ body {
 	animation: fadeit 2s ease-in;
 	background-repeat: no-repeat;
 }
+::-webkit-scrollbar {
+	display: none;
+}
 .navbar {
 	background-color:#e9ecef;
 }
@@ -19,22 +22,29 @@ body {
 }
 .parlx {
 	background-image: url("main.jpg");
-	min-height: 400px;
+	min-height: 500px;
 	position:relative;
-  opacity:0.70;
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  background-attachment:fixed;
+  	opacity:0.80;
+ 	background-position:center;
+  	background-size:cover;
+  	background-repeat:no-repeat;
+  	background-attachment:fixed;
 }
-.container-fluid {
-	padding-top: 50px; 
-	padding-right: 200px;
-	padding-left: 200px;
-	padding-bottom: 150px;
+.data .col-lg-4 {
+	padding-top: 60px;
+	padding-bottom: 60px;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+.data h2 {
+	font-weight: 400;
+}
+.data .col-lg-4 p {
+	margin-right: 1rem;
+	margin-left: 1rem;
 }
 .navbar-nav > a {
-	font-size:23px;
+	font-size:20px;
 	margin-left:15px;
 	margin-right:15px;
 	padding-bottom: 0%;
@@ -45,23 +55,20 @@ body {
 	animation-fill-mode: forwards;
 }
 .one {
+	height: 100%;
 	opacity:0; 	
 	animation: fadeit 2s ease-in 2s forwards;
 }
 .two {
+	height: 100%;
 	opacity:0; 	
 	animation: fadeit 2s ease-in 3s forwards;
 }
 .three {
+	height: 100%;
 	opacity:0; 	
 	animation: fadeit 2s ease-in 4s forwards;
 }
-.one > p{
-	font-size: 18px;
-}
-.two > p{
-	font-size: 18px;
-}
-.three > p{
-	font-size: 18px;
+.one,.two,.three > p{
+	font-size: 1rem;
 }
