@@ -1,23 +1,67 @@
 body {
-	background-image: url("main.jpg");
-	animation: fadeit 2s;
+	animation: fadeit 2s ease-in;
 	background-repeat: no-repeat;
+}
+.navbar {
+	background-color:#e9ecef;
 }
 @keyframes fadeit {
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
 @keyframes fontmag {
-  0%   { color:white; }
-  50%  { color:blue; }
-  100% { color: red; }
+	33%  { color: rgb(226, 62, 62);  }
+	66%  { color: rgb(34, 88, 158); }
+  100% { color:rgb(79, 187, 70);  }
+}
+.jumbotron {
+	padding: 10rem 2rem !important;
+}
+.parlx {
+	background-image: url("main.jpg");
+	min-height: 400px;
+	position:relative;
+  opacity:0.70;
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+}
+.container-fluid {
+	padding-top: 50px; 
+	padding-right: 200px;
+	padding-left: 200px;
+	padding-bottom: 150px;
 }
 .navbar-nav > a {
-	font-size:25px;
-	margin-left:20px;
-	margin-right:20px;
+	font-size:23px;
+	margin-left:15px;
+	margin-right:15px;
+	padding-bottom: 0%;
+	padding-top: 5px;
 }
 .navbar-nav > a:hover {
 	animation: fontmag 1.5s;
 	animation-fill-mode: forwards;
+}
+.one {
+	opacity:0; 	
+	animation: fadeit 2s ease-in 2s forwards;
+}
+.two {
+	opacity:0; 	
+	animation: fadeit 2s ease-in 3s forwards;
+}
+.three {
+	opacity:0; 	
+	animation: fadeit 2s ease-in 4s forwards;
+}
+.one > p{
+	font-size: 18px;
+}
+.two > p{
+	font-size: 18px;
+}
+.three > p{
+	font-size: 18px;
 }
