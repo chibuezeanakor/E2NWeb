@@ -30,7 +30,7 @@ body {
   	background-repeat:no-repeat;
   	background-attachment:fixed;
 }
-.data .col-lg-4 {
+.data .col-lg-4, .data .col-lg-12 {
 	padding-top: 60px;
 	padding-bottom: 60px;
 	margin-bottom: 1.5rem;
@@ -39,7 +39,7 @@ body {
 .data h2 {
 	font-weight: 400;
 }
-.data .col-lg-4 p {
+.data .col-lg-4 p, .data .col-lg-12 p {
 	margin-right: 1rem;
 	margin-left: 1rem;
 }
