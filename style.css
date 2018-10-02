@@ -13,42 +13,62 @@ body {
   100% { opacity: 1; }
 }
 @keyframes fontmag {
-	33%  { color: rgb(226, 62, 62);  }
-	66%  { color: rgb(34, 88, 158); }
+  33%  { color: rgb(226, 62, 62);  }
+  66%  { color: rgb(34, 88, 158); }
   100% { color:rgb(79, 187, 70);  }
 }
 .jumbotron {
 	padding: 10rem 2rem !important;
-}
-.parlx {
+	border-radius: 0px!important;
 	background-image: url("main.jpg");
-	min-height: 500px;
+	background-position:center;
+	background-size:cover;
+	background-repeat: repeat-y;
+  	background-attachment:fixed;
+}
+.parlx1 {
+	background-image: url("hope.jpg");
+	min-height: 400px;
 	position:relative;
-  	opacity:0.80;
+  	opacity:0.90;
  	background-position:center;
   	background-size:cover;
   	background-repeat:no-repeat;
   	background-attachment:fixed;
 }
-.data .col-lg-4, .data .col-lg-12 {
-	padding-top: 60px;
-	padding-bottom: 60px;
+.parlx2 {
+	background-image: url("hands.jpg");
+	min-height: 400px;
+	position:relative;
+  	opacity:0.90;
+ 	background-position:center;
+  	background-size:cover;
+  	background-repeat:no-repeat;
+  	background-attachment:fixed;
+}
+.data .col-lg-4, .data .col-lg-12, .data .col-lg-8, .data .col-lg-6 p {
+	padding-top: 100px;
+	padding-bottom: 100px;
 	margin-bottom: 1.5rem;
 	text-align: center;
 }
 .data h2 {
-	font-weight: 400;
+	font-weight: 500;
+	margin-bottom: 10px;
 }
-.data .col-lg-4 p, .data .col-lg-12 p {
+.data h3 {
+	font-weight: 400;
+	margin-top: .5rem;
+}
+.data .col-lg-4 p, .data .col-lg-12 p, .data .col-lg-8 p, .data .col-lg-6 p {
 	margin-right: 1rem;
 	margin-left: 1rem;
 }
 .navbar-nav > a {
 	font-size:20px;
-	margin-left:15px;
-	margin-right:15px;
+	margin-left:10px;
 	padding-bottom: 0%;
-	padding-top: 5px;
+	padding-top: 0px;
 }
 .navbar-nav > a:hover {
 	animation: fontmag 1.5s;
@@ -58,6 +78,10 @@ body {
 	height: 100%;
 	opacity:0; 	
 	animation: fadeit 2s ease-in 2s forwards;
+}
+.one >.row >.col-lg-4{
+	padding-top: 10px;
+	padding-bottom: 0px;
 }
 .two {
 	height: 100%;
@@ -72,7 +96,6 @@ body {
 .one,.two,.three > p{
 	font-size: 1rem;
 }
-
 .footer {
 	bottom: 0;
 	width: 100%;
