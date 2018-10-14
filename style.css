@@ -17,9 +17,10 @@ body {
   66%  { color: rgb(34, 88, 158); }
   100% { color:rgb(79, 187, 70);  }
 }
-.jumbotron {
+.carousel1,.carousel2,.carousel3,.carousel4 {
 	padding: 10rem 2rem !important;
 	border-radius: 0px!important;
+	min-height: 550px;
 	background-image: url("main.jpg");
 	background-position:center;
 	background-size:cover;
