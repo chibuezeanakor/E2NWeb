@@ -21,6 +21,11 @@
   <body>
   <script>
       AOS.init();
+	  $(function() {
+		  $('.carousel').carousel({
+			  interval: 4000
+		  })
+	  })
   </script>
 	<nav class="navbar navbar-expand-lg navbar-light sticky-top">
 			<div class="navbar-header">
@@ -46,31 +51,31 @@
 		<!-- Main jumbotron for a primary marketing message or call to action -->
 		<div class="carousel slide carousel-fade" data-ride="carousel">
 			<div class="carousel-inner">
-				<div class="carousel-item active carousel1">
+				<div class="carousel-item active carousel1 caro">
 					<div class="container">
 						<h1 class="display-1">Excess To Needs</h1>
 						<p>&nbsp;People are in need and we make it simpler for them to achieve</p>
 						<p>&nbsp;<a class="btn btn-warning btn-lg" href="#" role="button"><strong>Donate</strong></a></p>
 					</div>
 				</div>
-				<div class="carousel-item carousel2">
+				<div class="carousel-item carousel2 caro">
 					<div class="container">
-						<h1 class="display-1">Give</h1>
-						<p>&nbsp;Help those in need</p>
+						<h1 class="display-1 blue">Give</h1>
+						<p class="blue">&nbsp;Help those in need</p>
 						<p>&nbsp;<a class="btn btn-warning btn-lg" href="#" role="button"><strong>Donate</strong></a></p>
 					</div>
 				</div>
-				<div class="carousel-item carousel3">
+				<div class="carousel-item carousel3 caro">
 					<div class="container">
-						<h1 class="display-1">Go</h1>
-						<p>&nbsp;Volunteer out of the kindess of your heart</p>
+						<h1 class="display-1 green">Go</h1>
+						<p class="green">&nbsp;Volunteer out of the kindess of your heart</p>
 						<p>&nbsp;<a class="btn btn-warning btn-lg" href="#" role="button"><strong>Donate</strong></a></p>
 					</div>
 				</div>
-				<div class="carousel-item carousel4">
+				<div class="carousel-item carousel4 caro">
 					<div class="container">
-						<h1 class="display-1">Get</h1>
-						<p>&nbsp;Get the help you deserve</p>
+						<h1 class="display-1 red">Get</h1>
+						<p class="red">&nbsp;Get the help you deserve</p>
 						<p>&nbsp;<a class="btn btn-warning btn-lg" href="#" role="button"><strong>Donate</strong></a></p>
 					</div>
 				</div>
@@ -78,7 +83,7 @@
 		</div>
 		<div class="container data">
 			<div class="row">
-				<div class="col-lg-4">
+				<div class="col-lg-6">
 					<div class ="one">
 						<h2 class="text-center">The Problem</h2>
 						<p>Look around you. There are people in need every day.
@@ -87,14 +92,8 @@
 						</p>
 					</div>
 				</div>
-				<div class="col-lg-4">
-					<div class ="two">
-						<h2 class="text-center">The Solution</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-					</div>
-				</div>
-				<div class="col-lg-4">
-					<div class="three">
+				<div class="col-lg-6">
+					<div class="two">
 						<h2 class="text-center">What We Are Doing</h2>
 						<p>Excess To Needs is creating a mobile app designed to make it easy to connect donors, drivers, and recipients.
 								In addition, we are partnering with established charitable 
@@ -110,27 +109,20 @@
 	</div>
 	<div class="container-fluid data">
 		<div class="row">
-			<div class="container col-lg-8">
+			<div class="container col-lg-12">
 				<div class="one">
 					<h2 class="text-center">About Us</h2>
 					<div class="row">
-						<div class="col-lg-4" data-aos="zoom-in" data-aos-offset="350">
-							<img class="rounded-circle" src="riz.jpg" alt="Rizvan Rashik" width="140" height="140">
-							<h3>Rizvan Rashik</h3>
-							<p> Web Developer, cat owner and design newbie.
-							</p>
+						<div class="col-lg-6">
+							<img src="us.jpg" width="500px" height="280px">
 						</div>
-						<div class="col-lg-4" data-aos="zoom-in" data-aos-offset="450">
-							<img class="rounded-circle" src="tariq.jpg" alt="Tariq Islam" width="140" height="140">
-							<h3>Tariq Islam</h3>
-							<p>Founder of Excess To Needs. Best soccer player.
+						<div class="col-lg-6">
+							<h5>Corporate Board</h5>
+							<p>Tariq Islam, President<br>Sheikh Kamal, Vice President<br>David Wagner, Treasurer
+								<br><br>
 							</p>
-						</div>
-						<div class="col-lg-4" data-aos="zoom-in" data-aos-offset="550">
-							<img class="rounded-circle" src="ash.jpg" alt="Generic placeholder image" width="140" height="140">
-							<h3>Ashrafur Rashid</h3>
-							<p>GWU student, future software tester and second best soccer player.
-							</p>
+							<h5>Team</h5>
+							<p>Rizvan Rashik, Developer<br>Ashrafur Rashid, Website Designer</p>
 						</div>
 					</div>
 				</div>

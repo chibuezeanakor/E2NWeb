@@ -17,18 +17,29 @@ body {
   66%  { color: rgb(34, 88, 158); }
   100% { color:rgb(79, 187, 70);  }
 }
-.carousel1,.carousel2,.carousel3,.carousel4 {
+.caro {
 	padding: 10rem 2rem !important;
 	border-radius: 0px!important;
 	min-height: 550px;
-	background-image: url("main.jpg");
 	background-position:center;
 	background-size:cover;
 	background-repeat: repeat-y;
   	background-attachment:fixed;
 }
+.carousel1 {
+	background-image: url("main.jpg");
+}
+.carousel2 {
+	background-image: url("give.jpg");
+}
+.carousel3 {
+	background-image: url("go.jpg");
+}
+.carousel4 {
+	background-image: url("get.jpg");
+}
 .parlx1 {
-	background-image: url("hope.jpg");
+	background-image: url("give.jpg");
 	min-height: 400px;
 	position:relative;
   	opacity:0.90;
@@ -47,7 +58,7 @@ body {
   	background-repeat:no-repeat;
   	background-attachment:fixed;
 }
-.data .col-lg-4, .data .col-lg-12, .data .col-lg-8, .data .col-lg-6 p {
+.data .col-lg-12, .data .col-lg-8, .data .col-lg-6 {
 	padding-top: 100px;
 	padding-bottom: 100px;
 	margin-bottom: 1.5rem;
@@ -64,6 +75,7 @@ body {
 .data .col-lg-4 p, .data .col-lg-12 p, .data .col-lg-8 p, .data .col-lg-6 p {
 	margin-right: 1rem;
 	margin-left: 1rem;
+	font-size: 1rem;
 }
 .navbar-nav > a {
 	font-size:20px;
@@ -80,22 +92,29 @@ body {
 	opacity:0; 	
 	animation: fadeit 2s ease-in 2s forwards;
 }
-.one >.row >.col-lg-4{
+.one >.row >.col-lg-6{
 	padding-top: 10px;
 	padding-bottom: 0px;
+}
+.white {
+	color: #e9ecef;
+}
+.blue {
+	color: rgb(2, 183, 255);
+}
+.green {
+	color: rgb(8, 238, 0);
+}
+.red {
+	color: rgb(248, 23, 23);
 }
 .two {
 	height: 100%;
 	opacity:0; 	
 	animation: fadeit 2s ease-in 3s forwards;
 }
-.three {
-	height: 100%;
-	opacity:0; 	
-	animation: fadeit 2s ease-in 4s forwards;
-}
-.one,.two,.three > p{
-	font-size: 1rem;
+.one,.two > p{
+	font-size: 1.2rem;
 }
 .footer {
 	bottom: 0;
