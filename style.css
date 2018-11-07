@@ -5,6 +5,8 @@ body {
 }
 .navbar {
 	background-color:#e9ecef;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
 @keyframes fadeit {
   0%   { opacity: 0; }
@@ -78,12 +80,18 @@ body {
 .navbar-nav > a {
 	font-size:20px;
 	margin-left:10px;
-	padding-bottom: 0%;
-	padding-top: 0px;
+	background-color: transparent;
+	padding-right: 20px !important;
+	padding-left: 20px !important;
+	border-radius: 50px;
+	transition: border-color,background-color 0.8s linear; 
 }
 .navbar-nav > a:hover {
-	animation: fontmag 1.5s;
-	animation-fill-mode: forwards;
+	border-radius: 50px;
+	border-color: rgba(173, 78, 236, 0.911);
+	background-color: rgb(173, 78, 236, 0.911);
+	/*animation: fontmag 1.5s;
+	animation-fill-mode: forwards;*/
 }
 .one {
 	height: 100%;
