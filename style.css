@@ -13,9 +13,8 @@ body {
   100% { opacity: 1; }
 }
 @keyframes fontmag {
-  33%  { color: rgb(226, 62, 62);  }
-  66%  { color: rgb(34, 88, 158); }
-  100% { color:rgb(79, 187, 70);  }
+	0% { color: inherit;   }
+  100% { color: white;  }
 }
 .caro {
 	padding: 5.5rem 2rem !important;
@@ -81,17 +80,25 @@ body {
 	font-size:20px;
 	margin-left:10px;
 	background-color: transparent;
-	padding-right: 20px !important;
-	padding-left: 20px !important;
+	padding-right: 15px !important;
+	padding-left: 15px !important;
 	border-radius: 50px;
-	transition: border-color,background-color 0.8s linear; 
+	color: inherit;
+	transition:border-color,color,background-color 0.8s linear; 
 }
 .navbar-nav > a:hover {
+	color: white !important;
 	border-radius: 50px;
 	border-color: rgba(173, 78, 236, 0.911);
 	background-color: rgb(173, 78, 236, 0.911);
-	/*animation: fontmag 1.5s;
-	animation-fill-mode: forwards;*/
+	animation: fontmag .8s;
+	animation-fill-mode: forwards;
+}
+.head {
+	margin-bottom: 0px;
+}
+.sub {
+	margin-bottom: 20px;
 }
 .one {
 	height: 100%;
