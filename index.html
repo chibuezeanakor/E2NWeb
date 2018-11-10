@@ -1,23 +1,35 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-		<link rel="shortcut icon" href="e2n-icon.png" type="image/x-icon">
+
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="shortcut icon" href="e2n-icon.png" type="image/x-icon">
 	<!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <!-- Bootstrap CSS -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+	 crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+	 crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+	 crossorigin="anonymous"></script>
+	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+	 crossorigin="anonymous">
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 	<link rel="stylesheet" href="style.css">
-    <title>Excess To Needs</title>
-  </head>
-  <body>
-	<nav class="navbar navbar-expand-lg navbar-light sticky-top">
+	<title>Excess To Needs</title>
+</head>
+
+<body>
+	<script>
+		AOS.init();
+	</script>
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light sticky-top">
 			<div class="navbar-header">
 				<a>
 					<span>
@@ -25,91 +37,110 @@
 					</span>
 				</a>
 			</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="navbar-toggler-icon"></span>
-				</button>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+			 aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
 			<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 				<div class="navbar-nav ml-auto">
 					<a class="nav-item nav-link active" href="#">Home</a>
 					<a class="nav-item nav-link" href="#">App Manager</a>
-					<a class="nav-item nav-link" href="#">About Us</a>
+					<a class="nav-item nav-link" href="about.html">About Us</a>
 					<a class="nav-item nav-link" href="#">Contact</a>
 				</div>
 			</div>
-	</nav>
+		</nav>
+	</header>
 	<main role="main">
 		<!-- Main jumbotron for a primary marketing message or call to action -->
-		<div class="jumbotron text-center">
+		<div class="jumbotron text-left">
 			<div class="container">
 				<h1 class="display-1">Excess To Needs</h1>
-				<p>People are in need and we make it simpler for them to achieve</p>
-				<p><a class="btn btn-warning btn-lg" href="#" role="button"><strong>Donate</strong></a></p>
+				<p>&nbsp;People are in need and we make it simpler for them to achieve</p>
+				<p>&nbsp;<a class="btn btn-warning btn-lg" href="#" role="button"><strong>Donate</strong></a></p>
 			</div>
 		</div>
 		<div class="container data">
 			<div class="row">
 				<div class="col-lg-4">
-					<div class ="one">
+					<div class="one">
 						<h2 class="text-center">The Problem</h2>
 						<p>Look around you. There are people in need every day.
-								Some do not have enough food. Others lack basic necessities. 
-								In a land of excess it is time to start helping those in need. 
+							Some do not have enough food. Others lack basic necessities.
+							In a land of excess it is time to start helping those in need.
 						</p>
 					</div>
 				</div>
 				<div class="col-lg-4">
-					<div class ="two">
+					<div class="two">
 						<h2 class="text-center">The Solution</h2>
-						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
+						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris
+							condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec
+							sed odio dui. </p>
 					</div>
 				</div>
 				<div class="col-lg-4">
 					<div class="three">
 						<h2 class="text-center">What We Are Doing</h2>
 						<p>Excess To Needs is creating a mobile app designed to make it easy to connect donors, drivers, and recipients.
-								In addition, we are partnering with established charitable 
-								organizations to give them a web-based manager to coordinate with app users.
+							In addition, we are partnering with established charitable
+							organizations to give them a web-based manager to coordinate with app users.
 						</p>
 					</div>
 				</div>
 			</div>
-		</div> 
+		</div>
 	</main>
-	<div class="parlx">
-		
+	<div class="parlx1">
+
 	</div>
-	<div class="container data">
+	<div class="container-fluid data">
 		<div class="row">
-			<div class="col-lg-12">
-				<div class ="one">
+			<div class="container col-lg-8">
+				<div class="one">
 					<h2 class="text-center">About Us</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-					</p>
+					<div class="row">
+						<div class="col-lg-4" data-aos="zoom-in" data-aos-offset="350">
+							<img class="rounded-circle" src="riz.jpg" alt="Rizvan Rashik" width="140" height="140">
+							<h3>Rizvan Rashik</h3>
+							<p> Web Developer, cat owner and design newbie.
+							</p>
+						</div>
+						<div class="col-lg-4" data-aos="zoom-in" data-aos-offset="450">
+							<img class="rounded-circle" src="tariq.jpg" alt="Tariq Islam" width="140" height="140">
+							<h3>Tariq Islam</h3>
+							<p>Founder of Excess To Needs. Best soccer player.
+							</p>
+						</div>
+						<div class="col-lg-4" data-aos="zoom-in" data-aos-offset="550">
+							<img class="rounded-circle" src="ash.jpg" alt="Generic placeholder image" width="140" height="140">
+							<h3>Ashrafur Rashid</h3>
+							<p>GWU student, future software tester and second best soccer player.
+							</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="parlx">
-		
+	<div class="parlx2">
+
 	</div>
-	<div class="container data">
-		<div class="row">
-			<div class="col-lg-12">
-				<div class ="one">
-					<h2 class="text-center">App Manager</h2>
-					<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. 
-					</p>
-				</div>
-			</div>
+	<div class="container-fluid data">
+		<div class="col-lg-12">
+			<blockquote class="blockquote text-center">
+				<p class="mb-0 one">
+					<h3>"Connecting excess goods from donors directly to people in need."</h3>
+				</p>
+				<footer class="blockquote-footer two">Excess To Needs</footer>
+			</blockquote>
 		</div>
-	</div>
-	<div class="parlx">
-		
 	</div>
 	<footer class="footer">
-		<div class="container">
-		  <span class="text-muted" style="align-content: left;">© 2018 Excess To Needs Corporation</span>
+		<div class="container text-center">
+			<span class="text-primary">© 2018 Excess To Needs Corporation </span>
 		</div>
-	  </footer>
-  </body>
+	</footer>
+</body>
+
 </html>
