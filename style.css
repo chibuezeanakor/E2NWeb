@@ -5,8 +5,8 @@ body {
 }
 .navbar {
 	background-color:#e9ecef;
-	padding-top: 2px;
-	padding-bottom: 2px;
+	padding-top: 3px;
+	padding-bottom: 3px;
 }
 @keyframes fadeit {
   0%   { opacity: 0; }
@@ -17,9 +17,9 @@ body {
   100% { color: white;  }
 }
 .caro {
-	padding: 5.5rem 2rem !important;
+	padding: 5rem 2rem !important;
 	border-radius: 0px!important;
-	min-height: 550px;
+	min-height: 575px;
 	background-position:center;
 	background-size:cover;
 	background-repeat: repeat-y;
@@ -30,12 +30,14 @@ body {
 }
 .carousel2 {
 	background-image: url("give.jpg");
+	background-position:center bottom;
 }
 .carousel3 {
 	background-image: url("go.jpg");
 }
 .carousel4 {
 	background-image: url("get.jpg");
+	background-position:center bottom;
 }
 .parlx1 {
 	background-image: url("give.jpg");
