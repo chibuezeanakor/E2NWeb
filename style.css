@@ -1,25 +1,68 @@
+/* section styling change below is only for screens where the width is less then 992px*/
+@media only screen and (max-width: 992px) {
+    .data .col-lg-12, .data .col-lg-8, .data .col-lg-6 {
+		padding-top: 50px!important;
+		padding-bottom: 15px!important;
+		margin-bottom: 1.5rem!important;
+		text-align: center!important;
+	}
+	.data .col-lg-4 p, .data .col-lg-12 p, .data .col-lg-8 p, .data .col-lg-6 p {
+		margin-right: 4rem!important;
+		margin-left: 4rem!important;
+		font-size: 1.1rem;
+	}
+	.display-1 {
+		font-size: 4.0rem;
+	}
+}
+
+/* Body styling section */
 body {
 	animation: fadeit 2s ease-in;
 	background-repeat: no-repeat;
 	font-family: 'Varela Round', sans-serif;
 }
+
+/* Navigation styling section */
 .navbar {
 	background-color:#e9ecef;
-	padding-top: 3px;
-	padding-bottom: 3px;
+	padding-top: 2px;
+	padding-bottom: 2px;
 }
+.navbar-nav > a {
+	font-size:19px;
+	margin-left:8px;
+	background-color: transparent;
+	padding-right: 12px !important;
+	padding-left: 12px !important;
+	border-radius: 5px;
+	color: inherit;
+	transition:border-color,color,background-color 0.8s linear; 
+}
+.navbar-nav > a:hover {
+	color: white !important;
+	border-radius: 5px;
+	border-color: rgba(173, 78, 236, 0.911);
+	background-color: rgb(173, 78, 236, 0.911);
+	animation: fontmag .8s;
+	animation-fill-mode: forwards;
+}
+
+/* Animation keyframes section */
 @keyframes fadeit {
   0%   { opacity: 0; }
   100% { opacity: 1; }
 }
 @keyframes fontmag {
-	0% { color: inherit;   }
+	0% { color: inherit;  }
   100% { color: white;  }
 }
+
+/* Carousel styling section */
 .caro {
-	padding: 5rem 2rem !important;
+	padding: 5.5rem 2rem !important;
 	border-radius: 0px!important;
-	min-height: 575px;
+	min-height: 550px;
 	background-position:center;
 	background-size:cover;
 	background-repeat: repeat-y;
@@ -30,15 +73,81 @@ body {
 }
 .carousel2 {
 	background-image: url("give.jpg");
-	background-position:center bottom;
 }
 .carousel3 {
 	background-image: url("go.jpg");
 }
 .carousel4 {
 	background-image: url("get.jpg");
-	background-position:center bottom;
 }
+.head {
+	margin-bottom: 0px;
+}
+.sub {
+	margin-bottom: 20px;
+}
+
+/* carousel fade only */ 
+.carousel-fade .carousel-item {
+	opacity: 0;
+	transition-duration: .6s;
+	transition-property: opacity;
+}
+   
+.carousel-fade  .carousel-item.active,
+   .carousel-fade  .carousel-item-next.carousel-item-left,
+   .carousel-fade  .carousel-item-prev.carousel-item-right {
+	 opacity: 1;
+}
+   
+.carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-right {
+	opacity: 0;
+}
+   
+.carousel-fade  .carousel-item-next,
+   .carousel-fade .carousel-item-prev,
+   .carousel-fade .carousel-item.active,
+   .carousel-fade .active.carousel-item-left,
+   .carousel-fade  .active.carousel-item-prev {
+	transform: translateX(0);
+	transform: translate3d(0, 0, 0);
+}
+
+/* Column styling section */
+.data .col-lg-12, .data .col-lg-8, .data .col-lg-6 {
+	padding-top: 85px;
+	padding-bottom: 80px;
+	margin-bottom: 1.5rem;
+	text-align: center;
+}
+.data h2 {
+	font-weight: 500;
+	margin-bottom: 25px;
+}
+.data h3 {
+	font-weight: 400;
+	margin-top: .5rem;
+}
+.data .col-lg-4 p, .data .col-lg-12 p, .data .col-lg-8 p, .data .col-lg-6 p {
+	margin-right: 5rem;
+	margin-left: 5rem;
+	font-size: 1.1rem;
+}
+
+/* Animation FadeIn for sections */
+.one {
+	height: 100%;
+	opacity:0; 	
+	animation: fadeit 2s ease-in 2s forwards;
+}
+.two {
+	height: 100%;
+	opacity:0; 	
+	animation: fadeit 2s ease-in 3s forwards;
+}
+
+/* Parallax effect styling section */
 .parlx1 {
 	background-image: url("give.jpg");
 	min-height: 400px;
@@ -59,57 +168,10 @@ body {
   	background-repeat:no-repeat;
   	background-attachment:fixed;
 }
-.data .col-lg-12, .data .col-lg-8, .data .col-lg-6 {
-	padding-top: 100px;
-	padding-bottom: 100px;
-	margin-bottom: 1.5rem;
-	text-align: center;
-}
-.data h2 {
-	font-weight: 500;
-	margin-bottom: 25px;
-}
-.data h3 {
-	font-weight: 400;
-	margin-top: .5rem;
-}
-.data .col-lg-4 p, .data .col-lg-12 p, .data .col-lg-8 p, .data .col-lg-6 p {
-	margin-right: 1rem;
-	margin-left: 1rem;
-	font-size: 1rem;
-}
-.navbar-nav > a {
-	font-size:20px;
-	margin-left:10px;
-	background-color: transparent;
-	padding-right: 15px !important;
-	padding-left: 15px !important;
-	border-radius: 50px;
-	color: inherit;
-	transition:border-color,color,background-color 0.8s linear; 
-}
-.navbar-nav > a:hover {
-	color: white !important;
-	border-radius: 50px;
-	border-color: rgba(173, 78, 236, 0.911);
-	background-color: rgb(173, 78, 236, 0.911);
-	animation: fontmag .8s;
-	animation-fill-mode: forwards;
-}
-.head {
-	margin-bottom: 0px;
-}
-.sub {
-	margin-bottom: 20px;
-}
-.one {
-	height: 100%;
-	opacity:0; 	
-	animation: fadeit 2s ease-in 2s forwards;
-}
-.one >.row >.col-lg-6{
-	padding-top: 10px;
-	padding-bottom: 0px;
+
+/* Color styling section */
+.black {
+	color: #000000;
 }
 .white {
 	color: #e9ecef;
@@ -123,45 +185,43 @@ body {
 .red {
 	color: rgb(248, 23, 23);
 }
-.two {
-	height: 100%;
-	opacity:0; 	
-	animation: fadeit 2s ease-in 3s forwards;
-}
-.one,.two > p{
-	font-size: 1.2rem;
-}
+
+/* Footer styling section */
 .footer {
 	bottom: 0;
 	width: 100%;
+	background-color: #e9ecef;
 	/* Set the fixed height of the footer here */
-	height: 60px;
-	line-height: 60px; /* Vertically center the text there */
-	background-color: #f5f5f5;
+	height: 110px;
+	line-height: 37px; /* Vertically center the text there */
   }
-/*carousel fade only*/ 
-.carousel-fade .carousel-item {
-	opacity: 0;
-	transition-duration: .6s;
-	transition-property: opacity;
-   }
-   
-   .carousel-fade  .carousel-item.active,
-   .carousel-fade  .carousel-item-next.carousel-item-left,
-   .carousel-fade  .carousel-item-prev.carousel-item-right {
-	 opacity: 1;
-   }
-   
-   .carousel-fade .active.carousel-item-left,
-   .carousel-fade  .active.carousel-item-right {
-	opacity: 0;
-   }
-   
-   .carousel-fade  .carousel-item-next,
-   .carousel-fade .carousel-item-prev,
-   .carousel-fade .carousel-item.active,
-   .carousel-fade .active.carousel-item-left,
-   .carousel-fade  .active.carousel-item-prev {
-	transform: translateX(0);
-	transform: translate3d(0, 0, 0);
-   }
+.footer > p{
+	margin-bottom: 0px;
+}
+.fa {
+    padding: 10px;
+    font-size: 12px;
+    width: 32px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa:hover {
+	opacity: 0.7;
+}
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+}
+.fa-twitter {
+	background: #55ACEE;
+	color: white;
+}
+.fa-linkedin {
+	background: #007bb5;
+	color: white;
+}
+.fa-envelope {
+	background: #000000;
+	color: white;
+}
