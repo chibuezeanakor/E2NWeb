@@ -4,7 +4,7 @@
 		padding-top: 50px!important;
 		padding-bottom: 15px!important;
 		margin-bottom: 1.5rem!important;
-		text-align: center!important;
+		/* text-align: center!important; */
 	}
 	.data .col-lg-4 p, .data .col-lg-12 p, .data .col-lg-8 p, .data .col-lg-6 p {
 		margin-right: 4rem!important;
@@ -20,7 +20,7 @@
 body {
 	animation: fadeit 2s ease-in;
 	background-repeat: no-repeat;
-	font-family: 'Rubik', sans-serif;
+	font-family: 'Varela Round', sans-serif;
 }
 
 /* Navigation styling section */
@@ -119,7 +119,7 @@ body {
 	padding-top: 85px;
 	padding-bottom: 80px;
 	margin-bottom: 1.5rem;
-	text-align: center;
+	/* text-align: center; */
 }
 .data h2 {
 	font-weight: 500;
@@ -168,19 +168,6 @@ body {
   	background-repeat:no-repeat;
   	background-attachment:fixed;
 }
-.parlxAU {
-
-}
-.parlxDO {
-	background-image: url("emain.jpg");
-	min-height: 600px;
-	position:relative;
-  	opacity:0.90;
- 	background-position:center;
-  	background-size:cover;
-  	background-repeat:no-repeat;
-  	background-attachment:fixed;
-}
 
 /* Color styling section */
 .black {
@@ -198,42 +185,12 @@ body {
 .red {
 	color: rgb(248, 23, 23);
 }
-.grey {
-	background-color: #efefef;
-}
 
-/* Card Deck styling section */ 
-.card-deck {
-	padding-top: 100px;
-	padding-bottom: 100px;
-}
-.card-img-wrap {
-	overflow: hidden;
-	position: relative;
-}
-.card-img-wrap:after {
-	content: '';
-	position: absolute;
-	top: 0; left: 0; right: 0; bottom: 0;
-	background: rgba(255,255,255,0.3);
-	opacity: 0;
-	transition: opacity .50s;
-}
-.card-img-wrap img {
-	transition: transform .50s;
-	width: 100%;
-}
-.card-img-wrap:hover img {
-	transform: scale(1.2);
-}
-.card-img-wrap:hover:after {
-	opacity: 1;
-}
 /* Footer styling section */
 .footer {
 	bottom: 0;
 	width: 100%;
-	background-color: #5050501e;
+	background-color: #e9ecef;
 	/* Set the fixed height of the footer here */
 	height: 110px;
 	line-height: 37px; /* Vertically center the text there */
@@ -241,6 +198,51 @@ body {
 .footer > p{
 	margin-bottom: 0px;
 }
+
+.parlx-mobileapp {
+	background-image: url("mobile_app.jpg");
+	min-height: 600px;
+	position:relative;
+  	opacity:0.90;
+ 	background-position:center;
+  	background-size:cover;
+  	background-repeat:no-repeat;
+  	background-attachment:fixed;
+}
+
+.parlx-volunteer {
+	background-image: url("volunteer.jpeg");
+	min-height: 600px;
+	position:relative;
+  	opacity:0.90;
+ 	background-position:center;
+  	background-size:cover;
+  	background-repeat:no-repeat;
+  	background-attachment:fixed;
+}
+  
+#app-caption-head {
+	position: absolute;
+	left: 0;
+	top: 40%;
+	width: 100%;
+	text-align: center;
+	font-weight: 500;
+  }
+
+  #app-caption-sub {
+	position: absolute;
+	left: 0;
+	top: 60%;
+	width: 100%;
+	text-align: center;
+	font-size: 30px;
+  }
+
+  .traditional-description {
+	  text-align: left;
+  }
+
 .fa {
     padding: 10px;
     font-size: 12px;
